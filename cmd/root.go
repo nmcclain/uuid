@@ -38,20 +38,9 @@ var rootCmd = &cobra.Command{
 
 	Supported Version: v4
 	`,
-
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println(`
-	****************************************************
-	*                                                  *
-	*               Welcome to UUID CLI                *
-	*                                                  *
-	*                          BY: github.com/samit22  *
-	*--------------------------------------------------*
-	*          For help use command uuid -h            *
-	*--------------------------------------------------*
-	****************************************************
-	`)
-	},
+    Run: func(cmd *cobra.Command, args []string) {
+	  v4Cmd.Run(cmd, args)
+    },
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

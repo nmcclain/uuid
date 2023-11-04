@@ -46,11 +46,13 @@ Example: uuid v4 10
 			os.Exit(1)
 		}
 
-		msg := "UUID"
-		if num > 1 {
-			msg = "UUIDs"
-		}
-		fmt.Printf("Generating %d %s\n\n", num, msg)
+		/*
+			msg := "UUID"
+			if num > 1 {
+				msg = "UUIDs"
+			}
+			fmt.Printf("Generating %d %s\n\n", num, msg)
+		*/
 		uuids, err := generateUUIDV4(num, ug)
 		if err != nil {
 			fmt.Printf("Generating UUIDs failed: %v\n", err)
